@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSUN Map Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Sidebar for quiz instructions and feedback -->
+  <div id="results">
+    <h2>Map Quiz: Double-click the location of each building!</h2>
+    <div id="status-log"></div>
+  </div>
+
+  <!-- Container where Google Map appears -->
+  <div id="map"></div>
+
+  <!-- Google Maps JS API with geometry library -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&libraries=geometry&callback=initMap" async defer></script>
+
+  <!-- Custom Game Logic -->
+  <script src="script.js"></script>
+
+</body>
+</html>
